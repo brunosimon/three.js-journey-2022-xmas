@@ -20,9 +20,10 @@ export default function Balls()
             restitution: { value: 0.5, min: 0, max: 1 },
             friction: { value: 0.5, min: 0, max: 1 },
             force: { value: 0.2, min: 0, max: 2 },
-            roughness: { value: 0.3, min: 0, max: 1 },
+            roughness: { value: 0.15, min: 0, max: 1 },
             metalness: { value: 1, min: 0, max: 1 },
-            envMapIntensity: { value: 1.5, min: 0, max: 2 },
+            damping: { value: 1, min: 0, max: 1 },
+            envMapIntensity: { value: 2.5, min: 0, max: 5 },
         }
     )
 
@@ -102,6 +103,8 @@ export default function Balls()
             scales={ transforms.scales }
             restitution={ options.restitution }
             friction={ options.friction }
+            linearDamping={ options.damping }
+            angularDamping={ options.damping }
         >
             <instancedMesh
                 castShadow

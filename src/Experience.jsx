@@ -11,7 +11,7 @@ export default function Experience()
     const options = useControls({
         debug: { value: false },
         environmentPreset: {
-            value: 'apartment',
+            value: 'sunset',
             options: [ 'sunset', 'dawn', 'night', 'warehouse', 'forest', 'apartment', 'studio', 'city', 'park', 'lobby' ]
         }
     })
