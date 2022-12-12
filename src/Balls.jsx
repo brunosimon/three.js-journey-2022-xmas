@@ -92,6 +92,7 @@ export default function Balls()
             ref={ pusher }
             type="kinematicPosition"
             colliders={ false }
+            restitution={ 0 }
         >
             <BallCollider args={ [ 2 ] } />
         </RigidBody>
