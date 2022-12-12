@@ -9,3 +9,8 @@ body,
     height: 100%;
     background: ivory;
 }
+
+canvas
+{
+    touch-action: none;
+}
